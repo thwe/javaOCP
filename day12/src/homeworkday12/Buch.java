@@ -49,7 +49,7 @@ public class Buch {
 		// TODO Auto-generated constructor stub
 	}
 	public void showObj() {
-		System.out.println("titel: " + Titel);
+		System.out.println("Titel: " + Titel);
 		System.out.println("Autor: " + Autor);
 		System.out.println("Verlag: " + Verlag);
 		System.out.println("Seitenzahl: " + this.seiten);

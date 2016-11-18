@@ -34,11 +34,26 @@ public class Buch {
 		this.seiten = seiten;
 	}
 	// Konstruktor
-	public Buch(String titel) {
+	public Buch(String titel, String autor) {
 		Titel = titel;
+		Autor = autor;
+	}
+	public Buch(String verlag) {
+		Verlag = verlag;
+	}
+	public Buch(int seiten) {
+		this.seiten = seiten;
 	}
 	
-	
+	public Buch() {
+		// TODO Auto-generated constructor stub
+	}
+	public void showObj() {
+		System.out.println("titel: " + Titel);
+		System.out.println("Autor: " + Autor);
+		System.out.println("Verlag: " + Verlag);
+		System.out.println("Seitenzahl: " + this.seiten);
+	}
 	
 	
 	

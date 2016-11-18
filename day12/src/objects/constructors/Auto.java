@@ -10,6 +10,8 @@ public class Auto {
 	private int kmStand;
 	private int hubraum;
 	private boolean leasing;
+	
+	private Person besitzer; 
 
 	// Konstruktoren
 	// werden einmal aufgerufen, wenn ein Objekt erzeugt wird
@@ -39,11 +41,10 @@ public class Auto {
 
 	public Auto(String farbe, int pferdeStaerke, String modell, 
 			int kmStand, int hubraum, boolean leasing) {
-		
-			this(pferdeStaerke, hubraum, modell);
-			this.farbe=farbe;
-			this.setKmStand(kmStand);
-			this.setLeasing(leasing);
+		this(pferdeStaerke, hubraum, modell);
+		this.farbe = farbe;
+		this.setKmStand(kmStand);
+		this.setLeasing(leasing);	
 	}
 
 	// Methoden
@@ -104,6 +105,19 @@ public class Auto {
 
 	public void setLeasing(boolean leasing) {
 		this.leasing = leasing;
+	}
+
+	public Person getBesitzer() {
+		return besitzer;
+	}
+
+	public void setBesitzer(Person besitzer) {
+		this.besitzer = besitzer;
+	}
+	
+	@Override
+	public String toString() {
+		return modell;
 	}
 
 }

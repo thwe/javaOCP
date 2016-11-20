@@ -4,7 +4,7 @@ public class KontoTest {
 	
 	public static void kontoVergleich (Konto k1, Konto k2)
 	{
-	if (k1.getKontostand() < k2.getKontostand())
+	if (k1.getKontostand() > k2.getKontostand())
 	{
 	System.out.println (k1.getName()
 	+ " hat mehr Geld auf dem Konto als " + k2.getName());

@@ -5,7 +5,7 @@ public class Buch {
 	private String Titel;
 	private String Autor;
 	private String Verlag;
-	private int seiten;
+	private int Seiten;
 	
 	//Getter/Setter
 	public String getAutor() {
@@ -28,31 +28,25 @@ public class Buch {
 		Verlag = verlag;
 	}
 	public int getSeiten() {
-		return seiten;
+		return Seiten;
 	}
 	public void setSeiten(int seiten) {
-		this.seiten = seiten;
+		this.Seiten = seiten;
 	}
 	// Konstruktor
-	public Buch(String titel, String autor) {
-		Titel = titel;
-		Autor = autor;
-	}
-	public Buch(String verlag) {
-		Verlag = verlag;
-	}
-	public Buch(int seiten) {
-		this.seiten = seiten;
+	public Buch(String titel, String autor,String verlag,int seiten) {
+		this.Titel = titel;
+		this.Autor = autor;
+		this.Verlag = verlag;
+		this.Seiten = seiten;
 	}
 	
-	public Buch() {
-		// TODO Auto-generated constructor stub
-	}
+	
 	public void showObj() {
 		System.out.println("Titel: " + Titel);
 		System.out.println("Autor: " + Autor);
 		System.out.println("Verlag: " + Verlag);
-		System.out.println("Seitenzahl: " + this.seiten);
+		System.out.println("Seitenzahl: " + Seiten);
 	}
 	
 	

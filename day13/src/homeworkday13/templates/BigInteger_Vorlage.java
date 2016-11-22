@@ -1,16 +1,16 @@
-package homeworkday13;
+package aufgabe.bigInteger.templates;
 
 /**
  * Mit Hilfe dieser Klasse laesst sich die Summe zweier grosser positiver Zahlen
  * berechnen.
  * 
  * Die Methode add() addiert Zahlen stellenweise nach dem Schema der
- * schriftlichen Addition, wie es Grundschï¿½lern beigebracht wird.
+ * schriftlichen Addition, wie es Grundschülern beigebracht wird.
  */
 
-public class BigInteger {
+public class BigInteger_Vorlage {
 
-	// Zeichenpuffer fuer die groï¿½e Zahl
+	// Zeichenpuffer fuer die große Zahl
 	private StringBuffer digits = new StringBuffer();
 
 	/** Hilfsmittel zur Bearbeitung der Aufgabe - ANFANG **/
@@ -46,7 +46,7 @@ public class BigInteger {
 	// Fuer das Arbeiten mit dem StringBuffer beachten Sie auch:
 	// http://download.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html
 
-	// Klasse fï¿½r eine Zeichenkette: String
+	// Klasse für eine Zeichenkette: String
 	// Deklaration und Initialiseren einer Zeichenkette testString: String
 	// testString = new String("testString");
 	// Deklaration und Initialiseren einer leeeren Zeichenkette: String
@@ -58,12 +58,12 @@ public class BigInteger {
 	/** Hilfsmittel zur Bearbeitung der Aufgabe - ENDE **/
 
 	/**
-	 * Default-Konstruktor fï¿½r den Wert null
+	 * Default-Konstruktor für den Wert null
 	 */
 	// Methode muss fertig implementiert werden
 
 	/**
-	 * Konstruktor fï¿½r den Wert der int-Zahl n
+	 * Konstruktor für den Wert der int-Zahl n
 	 * 
 	 * @param n
 	 */
@@ -85,12 +85,12 @@ public class BigInteger {
 	 *         Steht in einem Zeichen c zum Beispiel '3' und soll aus diesem die
 	 *         Ganzzahl 3 werden, so besteht die traditionelle Art darin, eine
 	 *         '0' abzuziehen. Die ASCII-Null '0' hat den char-Wert 48, '1' dann
-	 *         49, bis '9' schlieï¿½lich 57 erreicht.
+	 *         49, bis '9' schließlich 57 erreicht.
 	 * 
-	 *         So ist logischerweise '3' ï¿½ '0' = 51 ï¿½ 48 = 3.) Die
+	 *         So ist logischerweise '3' – '0' = 51 – 48 = 3.) Die
 	 *         digit()-Methode ist dazu eine Alternative. Wir nutzen sie in
 	 *         einem kleinen Beispiel, um eine Zeichenkette mit Ziffern
-	 *         schlieï¿½lich in eine Ganzzahl zu konvertieren.
+	 *         schließlich in eine Ganzzahl zu konvertieren.
 	 * 
 	 *         Quelle: Kapitel 4.2.3 Ziffern einer Basis - Java ist auch eine
 	 *         Insel
@@ -112,11 +112,11 @@ public class BigInteger {
 	 * @param b
 	 * @return Summe der zwei BigInteger
 	 */
-	public BigInteger add(BigInteger b) {
+	public BigInteger_Vorlage add(BigInteger_Vorlage b) {
 
 		// Rueckgabewert der Methode
-		BigInteger result = new BigInteger();
-	
+		BigInteger_Vorlage result = new BigInteger_Vorlage();
+
 		// ...
 		// Methode muss fertig implementiert werden
 		// ...

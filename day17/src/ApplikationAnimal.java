@@ -1,4 +1,4 @@
-package vererbung;
+
 
 public class ApplikationAnimal {
 

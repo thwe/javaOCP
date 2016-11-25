@@ -1,4 +1,4 @@
-package vererbung;
+
 
 public class Cat extends Animal {
 	// Attribut
@@ -15,7 +15,7 @@ public class Cat extends Animal {
 
 	@Override
 	public void report() {
-		// Hier wird report aus Animal überschrieben
+		// Hier wird report aus Animal ï¿½berschrieben
 		// System.out.printf("My age is: %3d, my name is %s: race: %s \n",
 		// this.age, this.getName(), this.rasse);
 		super.report();

@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class ScannerDelimiter {
 
 	public static void main(String[] args) {
-		String text1 = "Hänsel und Gretel \n gingen durch den Wald";
-		String text2 = "Hänsel-und-Gretel \n gingen-durch-den-Wald";
-		String text3 = "Hänsel;und;Gretel \n gingen;durch;den;Wald";
-		String text4 = "Hänsel\tund\tGretel \n gingen\tdurch\tden\tWald";
+		String text1 = "Hï¿½nsel und Gretel \n gingen durch den Wald";
+		String text2 = "Hï¿½nsel-und-Gretel \n gingen-durch-den-Wald";
+		String text3 = "Hï¿½nsel;und;Gretel \n gingen;durch;den;Wald";
+		String text4 = "Hï¿½nsel\tund\tGretel \n gingen\tdurch\tden\tWald";
 		
 		Scanner sc = new Scanner(text1);
 //		System.out.println(sc.hasNextLine());

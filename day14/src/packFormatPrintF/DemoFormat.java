@@ -17,10 +17,10 @@ public class DemoFormat {
 		for (int i = 9990; i < 10000; i++) {
 			x = Math.sqrt(i);
 			System.out.format("Die Wurzel aus %5d ist %6.2f%n",i,x );
-			//Erklärung %5d es werden genau 5 Stellen für die Ausgabe der 
+			//Erklï¿½rung %5d es werden genau 5 Stellen fï¿½r die Ausgabe der 
 			//Zahl reserviert
 			
-			//Erklärung %6.2f 
+			//Erklï¿½rung %6.2f 
 			//mindestens 6 Stellen fuer die Gesamtausgabe
 			//(Vorzeichen, Zahl, Komma; Nachkommastellen)
 		}
@@ -30,14 +30,14 @@ public class DemoFormat {
 		for (int i = 9990; i < 10000; i++) {
 			double x = Math.sqrt(i);
 			System.out.format(Locale.GERMANY, "Die Wurzel aus %5d ist %6.2f%n",i,x );
-			//Erklärung %5d es werden genau 5 Stellen für die Ausgabe der 
+			//Erklï¿½rung %5d es werden genau 5 Stellen fï¿½r die Ausgabe der 
 			//Zahl reserviert
 			
-			//Erklärung %6.2f 
+			//Erklï¿½rung %6.2f 
 			//mindestens 6 Stellen fuer die Gesamtausgabe
 			//(Vorzeichen, Zahl, Komma; Nachkommastellen)
 			
-			//Erklärung: Durch Locale wird Komma durch Punktz ersetzt
+			//Erklï¿½rung: Durch Locale wird Komma durch Punktz ersetzt
 		}
 		System.out.println(Locale.getDefault());
 	}

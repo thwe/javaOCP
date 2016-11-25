@@ -6,7 +6,7 @@ import javax.swing.text.MaskFormatter;
 
 /**
  * 
- * Nicht prüfungsrelevant
+ * Nicht prï¿½fungsrelevant
  *
  */
 public class DemoMaskFormatter {

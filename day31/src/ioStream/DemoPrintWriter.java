@@ -1,6 +1,5 @@
 package ioStream;
 
-import java.awt.print.Printable;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -9,7 +8,7 @@ import java.io.PrintWriter;
 
 public class DemoPrintWriter {
 
-	public static void main(String[] args) {
+public static void main(String[] args) {
 		writeFile();
 
 	}

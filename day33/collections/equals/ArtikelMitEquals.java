@@ -1,4 +1,4 @@
-package coll.equals.demo01;
+package equals;
 
 public class ArtikelMitEquals {
 
@@ -26,7 +26,7 @@ public class ArtikelMitEquals {
 		this.name = name;
 	}
 
-	// @Override
+	@Override
 	public boolean equals(Object obj) {
 		if (obj instanceof ArtikelMitEquals) {
 			return this.artNr.equals(((ArtikelMitEquals) obj).getArtNr())
@@ -58,7 +58,7 @@ public class ArtikelMitEquals {
 	// return true;
 	// }
 
-	//@Override
+	@Override
 	public String toString() {
 
 		return (name + " " + artNr);

@@ -1,4 +1,4 @@
-package coll.equals.demo01.hashCode;
+package hashCode;
 
 import java.util.HashSet;
 import java.util.Set;

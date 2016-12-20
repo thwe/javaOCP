@@ -1,4 +1,4 @@
-package coll.equals.demo01.hashCode;
+package hashCode;
 
 /**
  * 
@@ -9,42 +9,42 @@ package coll.equals.demo01.hashCode;
  * Code, zugeordnet. Dieser dient als Index in einer Tabelle, in
  * der die Objekte gespeichert werden.
  * 
- * Für die Berechnung von Hash-Codes werden Hash-Funktionen 
+ * Fï¿½r die Berechnung von Hash-Codes werden Hash-Funktionen 
  * verwendet. Dies sind mathematische Funktionen, die sich 
  * dadurch auszeichnen, dass sie sich schnell berechnen lassen
  * und einen breit gestreuten Wertebereich haben. Ihr Ziel ist es,
- * einem Objekt einen möglichst eindeutigen Kennwert zuzuordnen. 
- * Dabei führt eine kleine Änderung der Ausgangsdaten oft zu einem 
- * völlig anderen Hash-Code. Damitkönnen die Objekte möglichst gut
- * verteilt werden. Ein bestimmtes Objekt erhält stets denselben
+ * einem Objekt einen mï¿½glichst eindeutigen Kennwert zuzuordnen. 
+ * Dabei fï¿½hrt eine kleine ï¿½nderung der Ausgangsdaten oft zu einem 
+ * vï¿½llig anderen Hash-Code. Damitkï¿½nnen die Objekte mï¿½glichst gut
+ * verteilt werden. Ein bestimmtes Objekt erhï¿½lt stets denselben
  * Hash-Code. 
  * 
- * Es ist jedoch möglich, dass zwei unterschiedliche Objekte denselben
+ * Es ist jedoch mï¿½glich, dass zwei unterschiedliche Objekte denselben
  * Hash-Code erhalten, d. h. Hash-Funktionen sind i.d.R. nicht umkehrbar. 
- * Um später zu prüfen, ob ein Objekt in der Tabelle enthalten ist, 
+ * Um spï¿½ter zu prï¿½fen, ob ein Objekt in der Tabelle enthalten ist, 
  * wird der Tabellenindex jedes Mal erneut aus dem Hash-Code berechnet.
- * Durch den so möglichen direkten Tabellenzugriff lässt sich ein Objekt
+ * Durch den so mï¿½glichen direkten Tabellenzugriff lï¿½sst sich ein Objekt
  * sehr viel schneller wieder finden als durch sequenzielles Suchen.
  * 
  * In der Praxis ist die Tabelle in der Regel kleiner als der Wertebereich
- * der Hash- Funktion. Daher müssen die Hash-Codes mit Hilfe des Restwert
- * -Operators % auf die tatsächliche Tabellengröße abgebildet werden. 
+ * der Hash- Funktion. Daher mï¿½ssen die Hash-Codes mit Hilfe des Restwert
+ * -Operators % auf die tatsï¿½chliche Tabellengrï¿½ï¿½e abgebildet werden. 
  * Daneben kann es vorkommen, dass zwei verschiedene Objekte den gleichen
  * Hash-Code haben bzw. dass ihr Hash-Code durch die Berechnung des 
  * Restwertes mit Hilfe des Restwert-Operators % auf den gleichen Index 
  * abgebildet wird. Darum werden in der Tabelle nicht einzelne Objekte, 
  * sondern Listen von Objekten (sog. Eimer, engl. Buckets) mit dem 
- * gleichen Hash- Code gespeichert. Für die Suche spielt das keine
- * große Rolle, da diese Listen in der Regel sehr klein und schnell 
+ * gleichen Hash- Code gespeichert. Fï¿½r die Suche spielt das keine
+ * groï¿½e Rolle, da diese Listen in der Regel sehr klein und schnell 
  * zu durchsuchen sind.
  * 
- * Beim Zugriff wird also zunächst in der Methode hashCode() der Hash-
- * Code berechnet, mit dem Restwert-Operator auf die Tabellengröße 
- * angepasst, um die richtige Liste zu finden und anschließend mit 
+ * Beim Zugriff wird also zunï¿½chst in der Methode hashCode() der Hash-
+ * Code berechnet, mit dem Restwert-Operator auf die Tabellengrï¿½ï¿½e 
+ * angepasst, um die richtige Liste zu finden und anschlieï¿½end mit 
  * Hilfe der equals()-Methode nach dem richtigen Objekt gesucht. 
- * Dies muss nicht das ursprünglich eingefügte Objekt sein, da die 
- * equals()-Methode lediglich auf inhaltliche Gleichheit prüft 
- * (nur ihre Basisimplementierung in der Klasse Object prüft auf Identität).
+ * Dies muss nicht das ursprï¿½nglich eingefï¿½gte Objekt sein, da die 
+ * equals()-Methode lediglich auf inhaltliche Gleichheit prï¿½ft 
+ * (nur ihre Basisimplementierung in der Klasse Object prï¿½ft auf Identitï¿½t).
  *
  */
 public class ArtikelMitEquals {

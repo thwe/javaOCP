@@ -1,4 +1,4 @@
-package coll.equals.demo01.hashCode;
+package equals;
 
 public class ArtikelOhneEquals {
 

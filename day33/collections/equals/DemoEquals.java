@@ -1,11 +1,10 @@
-package coll.equals.demo01;
+package equals;
 
 public class DemoEquals {
 
 	public static void main(String[] args) {
 		
-		artikelOhneEquals();
-		System.out.println("#################");
+		//artikelOhneEquals();
 		artikelMitEquals();
 	}
 
@@ -35,7 +34,6 @@ public class DemoEquals {
 		ArtikelOhneEquals c = new ArtikelOhneEquals("1002", "Abstreifring 25x125");
 		ArtikelOhneEquals d = new ArtikelOhneEquals("1003", "Montierbarer Zackenring");
 		ArtikelOhneEquals e = new ArtikelOhneEquals("1000", "Mutter 8x10");
-		
 		
 		System.out.println(a == b);
 		System.out.println(a == e);

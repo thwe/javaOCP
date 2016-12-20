@@ -1,4 +1,4 @@
-package coll.equals.demo01;
+package hashCode;
 
 public class ArtikelOhneEquals {
 
@@ -26,7 +26,7 @@ public class ArtikelOhneEquals {
 		this.name = name;
 	}
 	
-	//@Override
+	@Override
 	public String toString() {
 		
 		return (name + " "  + artNr);

@@ -1,4 +1,4 @@
-package packSer.demoSer08;
+package packSer.demoSer06.ver01;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -8,10 +8,10 @@ import java.io.ObjectOutputStream;
 public class SerializeDog {
 	public static void main(String[] args) {
 		Collar c = new Collar(3);
-		Dog d = new Dog(c, 5);
-		System.out.println("before: collar size is " + d.getCollar().getCollarSize());
+		MyDog d = new MyDog(c, 5);
+		System.out.println("dog before: " + d );
 		try {
-			FileOutputStream fs = new FileOutputStream("dogSerColltrans.ser");
+			FileOutputStream fs = new FileOutputStream("myDogSer.ser");
 			ObjectOutputStream os = new ObjectOutputStream(fs);
 			os.writeObject(d);
 			os.close();
@@ -19,19 +19,17 @@ public class SerializeDog {
 			e.printStackTrace();
 		}
 		
-		c = null;
-		d = null;
+		c= null;
+		d = null; 
 		
 		try {
-			FileInputStream fis = new FileInputStream("dogSerColltrans.ser");
+			FileInputStream fis = new FileInputStream("myDogSer.ser");
 			ObjectInputStream ois = new ObjectInputStream(fis);
-			d = (Dog) ois.readObject();
+			d = (MyDog) ois.readObject();
 			ois.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		System.out.println(d);
-		System.out.println(d.getCollar());
-		System.out.println("after: collar size is " + d.getCollar().getCollarSize());
+		System.out.println("dog after: " + d );
 	}
 }

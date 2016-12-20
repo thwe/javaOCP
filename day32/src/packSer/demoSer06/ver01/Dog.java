@@ -1,4 +1,4 @@
-package packSer.demoSer06;
+package packSer.demoSer06.ver01;
 
 import java.io.Serializable;
 
@@ -10,6 +10,7 @@ class MyDog extends Dog implements Serializable {
 	private int dogSize;
 	
 	public MyDog(Collar collar, int size) {
+		super();
 		myCollar = collar;
 		dogSize = size;
 	}
@@ -18,5 +19,9 @@ class MyDog extends Dog implements Serializable {
 		return myCollar;
 	}
 	
-	
+	@Override
+	public String toString() {
+		
+		return myCollar + " dogSize:"+ dogSize ;
+	}
 }

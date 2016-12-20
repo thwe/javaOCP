@@ -15,8 +15,8 @@ public class FamilyWDog {
 		Person mama = new Person("Katharina");
 		Person kind1 = new Person("Fritzchen");
 		Person kind2 = new Person("Anne");
-		// Dog dog = new Dog("Horst"); // NOT SERIALIZABLE
-		DogWSer dogWSer = new DogWSer("Horst");
+		Dog dog = new Dog("Horst");
+		//DogWSer dogWSer = new DogWSer("Horst");
 		papa.setFather(opa.getName());
 		papa.setMother(oma.getName());
 		kind1.setFather(papa.getName());
@@ -32,7 +32,7 @@ public class FamilyWDog {
 			oOStream.writeObject(kind2);
 			oOStream.writeObject(papa);
 			oOStream.writeObject(mama);
-			oOStream.writeObject(dogWSer);
+			oOStream.writeObject(dog);
 			//java.io.NotSerializableException: packSer.demoSer02.Dog
 			//at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1164)
 			//at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:330)
@@ -49,7 +49,7 @@ public class FamilyWDog {
 		kind2 = null;
 		papa = null;
 		mama = null;
-		dogWSer = null;
+		dog = null;
 		try{
 			FileInputStream fis = new FileInputStream("familyWdog.ser");
 			ObjectInputStream is = new ObjectInputStream(fis);
@@ -57,13 +57,13 @@ public class FamilyWDog {
 			kind2 = (Person)is.readObject();
 			papa = (Person)is.readObject();
 			mama = (Person)is.readObject();
-			dogWSer = (DogWSer)is.readObject();
+			dog = (Dog)is.readObject();
 			//java.io.WriteAbortedException: writing aborted; java.io.NotSerializableException: packSer.demoSer02.Dog
 			//at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1331)
 			//at java.io.ObjectInputStream.readObject(ObjectInputStream.java:349)
 			//at packSer.demoSer02.FamilyWDog.main(FamilyWDog.java:55)
 			
-			//ï¿½berprï¿½fen
+			//Überprüfen
 			System.out.println(" ---- ");
 			System.out.println(kind1.getName() + " " + kind2.getName());
 			System.out.println(kind1.getFather() + " " + kind2.getFather());

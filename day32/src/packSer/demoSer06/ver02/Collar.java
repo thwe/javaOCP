@@ -1,4 +1,4 @@
-package packSer.demoSer06;
+package packSer.demoSer06.ver02;
 
 import java.io.Serializable;
 
@@ -18,5 +18,10 @@ class Collar implements Serializable{
 
 	public int getCollarSize() {
 		return collarSize;
+	}
+	
+	@Override
+	public String toString() {
+		return "CollarSize: " + collarSize;
 	}
 }

@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-//Unter Serialisierung wollen wir die Fï¿½higkeit verstehen, ein Objekt,
+//Unter Serialisierung wollen wir die Fähigkeit verstehen, ein Objekt,
 // das im Hauptspeicher der Anwendung existiert, in ein Format zu
 // konvertieren, das es erlaubt, das Objekt in eine Datei zu schreiben
 // und auch auszulesen
@@ -17,7 +17,7 @@ public class DemoSerialisierung {
 	public static void main(String[] args) {
 		Time time = new Time(11, 52);
 		String fileName = "Time.ser";
-		writeSerObject(time, fileName);
+		//writeSerObject(time, fileName);
 		readSerObject(fileName);
 	}
 

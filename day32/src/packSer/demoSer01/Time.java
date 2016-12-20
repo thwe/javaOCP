@@ -13,7 +13,7 @@ public class Time implements Serializable{
 		this.minute = minute;
 	}
 	
-	// @Override
+	@Override
 	public String toString() {
 		return "hour: " + hour + " minute: " + minute;
 	}

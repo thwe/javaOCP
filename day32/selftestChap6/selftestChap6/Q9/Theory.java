@@ -1,4 +1,4 @@
-package Q9;
+package selftestChap6.Q9;
 
 public class Theory {
 

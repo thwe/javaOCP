@@ -1,4 +1,4 @@
-package selftestCap8;
+
 /*
  * Question 7
  */

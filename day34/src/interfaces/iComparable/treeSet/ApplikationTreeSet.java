@@ -1,9 +1,9 @@
-package coll.interfaces.iComparable.treeSet;
+package interfaces.iComparable.treeSet;
 
 import java.util.Set;
 import java.util.TreeSet;
 
-import coll.interfaces.iComparable.Artikel;
+import interfaces.iComparable.Artikel;
 
 public class ApplikationTreeSet {
 	public static void main(String[] args) {

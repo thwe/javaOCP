@@ -1,4 +1,4 @@
-package Q10;
+package selftestChap6.Q10;
 
 import java.io.*;
 

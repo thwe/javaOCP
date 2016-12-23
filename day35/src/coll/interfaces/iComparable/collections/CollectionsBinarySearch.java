@@ -1,11 +1,11 @@
-package coll.interfaces.iComparable.arrays.binarySearch;
+package coll.interfaces.iComparable.collections;
 
 import java.util.Arrays;
 import java.util.Collections;
 
 import coll.interfaces.iComparable.Artikel;
 
-public class ArraysBinarySearch {
+public class CollectionsBinarySearch {
 
 	public static void main(String[] args) {
 		searchComparable();

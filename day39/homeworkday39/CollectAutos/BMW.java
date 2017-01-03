@@ -6,12 +6,12 @@ public class BMW extends Auto{
 		super(modell, baujahr);
 		// TODO Auto-generated constructor stub
 	}
-
+/*
 	@Override
 	public String toString() {
 		
 		return ("BMW. Modell: " + getModell() + ", Baujahr " + getBaujahr() );
 	}
-
+*/
 	
 }

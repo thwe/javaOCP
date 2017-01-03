@@ -10,14 +10,14 @@ public class VW extends Auto{
 	}
 	
 	
-
+/*
 	@Override
 	public String toString() {
 		
 		return ("VW. Modell: " + getModell() + ", Baujahr " + getBaujahr() );
 	}
 
-
+*/
 
 	
 

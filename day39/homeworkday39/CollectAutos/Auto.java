@@ -29,5 +29,8 @@ public void setModell(String modell) {
 	this.modell = modell;
 }
 
-
+@Override
+public String toString() {
+	return getClass().getSimpleName() + ". Modell: " + modell + ", Baujahr " + baujahr;
+}
 }

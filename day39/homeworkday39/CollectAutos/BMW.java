@@ -1,6 +1,6 @@
 package CollectAutos;
 
-public class BMW extends Auto{
+public class BMW extends Auto<BMW>{
 
 	public BMW(String modell, int baujahr) {
 		super(modell, baujahr);

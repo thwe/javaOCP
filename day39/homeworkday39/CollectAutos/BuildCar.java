@@ -1,5 +1,6 @@
 package CollectAutos;
 
+import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashSet;
@@ -27,28 +28,32 @@ public class BuildCar {
 		//System.out.println(vw1);
 		//System.out.println(bmw1);
 		
-		LinkedList<VW> llistVW = new LinkedList<VW>();
-		HashSet<VW> hashsVW = new HashSet<VW>();
+		
+		
 		TreeSet<VW> treesVW = new TreeSet<VW>(new SortModel());
 		
 		//ArrayList<BMW> aListBMW =
 		//HashSet<BMW>
 		//TreeSet<BMW>
+		LinkedList<VW> llistVW = new LinkedList<VW>();
 		
 		llistVW.add(vw1);
 		llistVW.add(vw2);
 		llistVW.add(vw3);
 		
+		print(llistVW);
+		/*
 		System.out.println("#LinkedList:");
 		Iterator<VW> it = llistVW.iterator();
 		while (it.hasNext()) {
 			System.out.println(it.next());
 				}
-
-		
-		hashsVW.add(vw1);
-		hashsVW.add(vw2);
-		hashsVW.add(vw3);
+*/
+		HashSet<VW> hashsVW = new HashSet<VW>(llistVW);
+		// hashsVW.add(vw1);
+		// hashsVW.add(vw2);
+		// hashsVW.add(vw3);
+		print(hashsVW);
 		
 		System.out.println("#HashSet:");
 		Iterator<VW> it1 = hashsVW.iterator();
@@ -70,11 +75,15 @@ public class BuildCar {
 			System.out.println(it2.next());
 				}
 		
+	}
 		
-		
-		
-		
-		
+		// Print Methode
+		static void print(Collection<VW> coll){
+		System.out.println("-----------------------------------------------");
+		System.out.println("---Collection: " +coll.getClass() + "----------------");
+		for (VW vw : coll){
+			System.out.println(vw);
+		}
 	}
 
 	

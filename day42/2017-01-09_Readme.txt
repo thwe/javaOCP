@@ -1,0 +1,24 @@
+# Wissensvermittlung:
+
+- 10:45 - 11:30 Uhr
+- 12:20 - 13:00 Uhr
+
+# Sprechzeiten:
+
+- 13:30 - 15:00 Uhr (Chat im Hauptraum)
+- 15:15 - 16:45 Uhr (Chat im Betreuungsraum)
+
+# Aufgaben:
+
+- Thread / API (SCJP-Buch)
+- Thread/sleep.
+- InterruptedException aus der sleep
+- B05 so umbauen, dass der endloser Thread nicht mehr mit dem boolean Attribut 
+'laufen' sondern durch die InterruptedException beendet wird
+- Optional: Thread/join
+
+# Nachzuholen (f. den Dozenten):
+- Generics / gen. Methoden
+- NavigableSet / backed Collection
+- Maps
+

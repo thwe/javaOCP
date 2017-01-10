@@ -1,0 +1,28 @@
+# Wissensvermittlung:
+
+- 10:30
+
+# Sprechzeiten:
+
+- 13:30 - 15:00 Uhr (Chat im Hauptraum)
+- 15:15 - 16:45 Uhr (Chat im Betreuungsraum)
+
+# Aufgaben:
+
+- Thread / API (SCJP-Buch)
+- Thread/join
+
+aufgaben:
+- Einen Extra-Thread erstellen, der 1000 mal nacheinander eine Variable inkrementiert. 
+Der main-Thread soll warten, bis die Arbeit erledigt wurde. Geben Sie die Variable im main-Thread aus.
+
+- Zwei Extra-Threads erstellen. Jeder Thread soll 1.000.000 mal nacheinander DIESELBE Variable inkrementiert. 
+Der main-Thread wartet auf das Ergebnis und gibt die Variable aus
+
+
+
+# Nachzuholen (f. den Dozenten):
+- Generics / gen. Methoden
+- NavigableSet / backed Collection
+- Maps
+

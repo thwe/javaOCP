@@ -1,0 +1,23 @@
+# Wissensvermittlung:
+
+- 08:00
+
+# Sprechzeiten:
+
+- 13:30 - 15:00 Uhr (Chat im Hauptraum)
+- 15:15 - 16:45 Uhr (Chat im Betreuungsraum)
+
+# Aufgaben:
+
+- Threads (SCJP-Buch)
+- Zwei Extra-Threads erstellen. Jeder Thread soll 1.000.000 mal nacheinander DIESELBE Variable inkrementiert. 
+Der main-Thread wartet auf das Ergebnis und gibt die Variable aus. Bitte die Lösung korrekt durch Synchronisieren gestalten
+- synchronized 
+- optional: (pdf)
+
+
+# Nachzuholen (f. den Dozenten):
+- Generics / gen. Methoden
+- NavigableSet / backed Collection
+- Maps
+

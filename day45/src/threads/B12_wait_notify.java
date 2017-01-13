@@ -19,7 +19,7 @@ class Producer implements Runnable {
 	public void useData() {
 		habeDaten = false;
 	}
-	
+
 	@Override
 	public void run() {
 		
@@ -33,6 +33,7 @@ class Producer implements Runnable {
 		}
 	}
 }
+
 
 class Consumer extends Thread {
 	private Producer p;
@@ -52,7 +53,7 @@ class Consumer extends Thread {
 				}
 			}
 			
-			//Achtung! Zugriffe auf habeDaten müssen noch synchronisiert werden
+			//Achtung! Zugriffe auf habeDaten mï¿½ssen noch synchronisiert werden
 			System.out.println("Consumer sucht nach Daten");
 			
 			if( p.hasData() ) {
@@ -64,8 +65,8 @@ class Consumer extends Thread {
 }
 
 /*
- * - Die Kommunikation zw. dem Producer und Consumer läuft über den GEMEINSAMEN Monitor!
- * - wait/notify/notifyAll müssen aus einem synchronized-Block aufgerufen werden
+ * - Die Kommunikation zw. dem Producer und Consumer lï¿½uft ï¿½ber den GEMEINSAMEN Monitor!
+ * - wait/notify/notifyAll mï¿½ssen aus einem synchronized-Block aufgerufen werden
  * - Synchronisiert MUSS mit demselben Monitor, mit dem wait/notify/notifyAll aufgerufen werden 
  */
 public class B12_wait_notify {
